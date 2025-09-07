@@ -10,7 +10,7 @@
 
 **A powerful Retrieval-Augmented Generation (RAG) system that enables intelligent document Q&A with real-time responses, citations, and advanced summarization capabilities.**
 
-[🚀 Quick Start](#-quick-start) • [📚 Features](#-features) • [🏗️ Architecture](#️-architecture) • [🛠️ Tech Stack](#️-tech-stack) • [📖 API Reference](#-api-reference)
+[ Quick Start](#-quick-start) • [ Features](#-features) • [ Architecture](#️-architecture) • [ Tech Stack](#️-tech-stack) • [ API Reference](#-api-reference)
 
 </div>
 
@@ -70,31 +70,31 @@
 ```mermaid
 graph TB
     subgraph "Frontend Layer"
-        U[👤 User] --> F[🌐 Next.js Frontend]
-        F --> FU[📁 File Upload]
-        F --> CUI[💬 Chat Interface]
+        U[👤 User] --> F[ Next.js Frontend]
+        F --> FU[ File Upload]
+        F --> CUI[ Chat Interface]
     end
     
     subgraph "Backend Services"
-        FU --> B[⚡ FastAPI Backend]
+        FU --> B[ FastAPI Backend]
         CUI --> B
-        B --> DP[📋 Document Processing]
-        B --> ASK[❓ Question Processing]
+        B --> DP[ Document Processing]
+        B --> ASK[ Question Processing]
     end
     
     subgraph "Document Pipeline"
-        DP --> OCR[👁️ OCR Extraction]
-        DP --> TXT[✂️ Text Chunking]
-        TXT --> EMB[🔢 Embedding Generation]
-        EMB --> DB[🗄️ ChromaDB Vector Store]
+        DP --> OCR[ OCR Extraction]
+        DP --> TXT[ Text Chunking]
+        TXT --> EMB[ Embedding Generation]
+        EMB --> DB[ ChromaDB Vector Store]
     end
     
     subgraph "AI Processing"
-        ASK --> QP[🔍 Query Processing]
-        QP --> RET[📊 Context Retrieval]
-        RET --> LLM[🧠 Google Gemini LLM]
-        LLM --> RESP[📑 Answer + Citations]
-        RESP --> STREAM[⚡ Streaming Response]
+        ASK --> QP[ Query Processing]
+        QP --> RET[ Context Retrieval]
+        RET --> LLM[ Google Gemini LLM]
+        LLM --> RESP[ Answer + Citations]
+        RESP --> STREAM[ Streaming Response]
     end
     
     DB --> RET
@@ -106,16 +106,16 @@ graph TB
     style STREAM fill:#e8f5e8
 ```
 
-###  Processing Pipeline
+### 📊 Processing Pipeline
 
 ```
-📂 Document Upload → 🔍 Text Extraction → ✂️ Chunking → 🔢 Embeddings → 🗄️ Vector Store → 
-❓ User Query → 🔍 Similarity Search → 🧠 LLM Processing → 📑 Streamed Response
+ Document Upload →  Text Extraction →  Chunking →  Embeddings →  Vector Store → 
+ User Query →  Similarity Search →  LLM Processing →  Streamed Response
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 <details>
 <summary><b>🔧 Backend Technologies</b></summary>
@@ -133,7 +133,7 @@ graph TB
 </details>
 
 <details>
-<summary><b> Frontend Technologies</b></summary>
+<summary><b>  Frontend Technologies</b></summary>
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
@@ -150,7 +150,7 @@ graph TB
 
 ##  Quick Start
 
-### 📋 Prerequisites
+###  Prerequisites
 
 ```bash
 # System Requirements
@@ -194,20 +194,20 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 EOF
 ```
 
-### 🏃‍♂️ Running the Application
+###  Running the Application
 
 #### Terminal 1 - Backend Server
 ```bash
 cd Backend
 python main.py
-# 🚀 Server running at http://localhost:8000
+#  Server running at http://localhost:8000
 ```
 
 #### Terminal 2 - Frontend Server
 ```bash
 cd Frontend
 npm run dev
-# 🌐 Application available at http://localhost:3000
+#  Application available at http://localhost:3000
 ```
 
 ---
@@ -251,7 +251,7 @@ RAG-Document-QA/
 | `POST` | `/summarize` | Generate document summaries | Summary text |
 | `GET` | `/health` | Health check and database status | System status |
 
-### 📝 Request Examples
+###  Request Examples
 
 <details>
 <summary><b>Document Upload</b></summary>
@@ -287,20 +287,20 @@ curl -X POST "http://localhost:8000/summarize" \
 
 ---
 
-## 🌟 Advanced Features
+##  Advanced Features
 
-### 🔍 **Smart Document Processing**
+###  **Smart Document Processing**
 - **Intelligent OCR**: Automatic fallback for scanned documents
 - **Context Preservation**: Maintains document structure and relationships
 - **Metadata Extraction**: Page numbers, sections, and source tracking
 
-### 💡 **Enhanced Q&A Experience**
+###  **Enhanced Q&A Experience**
 - **Streaming Responses**: Real-time answer generation with typing effect
 - **Citation System**: Precise page references with relevant snippets  
 - **Chat Memory**: Contextual conversations with history retention
 - **Multi-level Summaries**: Customizable summary depth (short/medium/detailed)
 
-### 🎨 **Modern User Interface**
+###  **Modern User Interface**
 - **Responsive Design**: Optimized for desktop, tablet, and mobile
 - **Theme Support**: Dark and light mode with user preference memory
 - **Interactive Elements**: Smooth animations and transitions
@@ -310,17 +310,17 @@ curl -X POST "http://localhost:8000/summarize" \
 
 ## 🚧 Roadmap & Future Enhancements
 
-- [ ] **🌍 Multi-language Support**: OCR and LLM processing for various languages
-- [ ] **📊 Analytics Dashboard**: Usage insights and document statistics  
-- [ ] **👥 Collaboration Features**: Shared documents and team Q&A sessions
-- [ ] **📱 Mobile App**: Native iOS/Android companion application
-- [ ] **⚡ Performance Scaling**: PostgreSQL/Redis integration for enterprise use
-- [ ] **🔐 Advanced Security**: User authentication and document access controls
-- [ ] **🎯 Custom Models**: Fine-tuned embeddings for domain-specific documents
+- [ ] ** Multi-language Support**: OCR and LLM processing for various languages
+- [ ] ** Analytics Dashboard**: Usage insights and document statistics  
+- [ ] ** Collaboration Features**: Shared documents and team Q&A sessions
+- [ ] ** Mobile App**: Native iOS/Android companion application
+- [ ] ** Performance Scaling**: PostgreSQL/Redis integration for enterprise use
+- [ ] ** Advanced Security**: User authentication and document access controls
+- [ ] ** Custom Models**: Fine-tuned embeddings for domain-specific documents
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -333,13 +333,13 @@ We welcome contributions! Please feel free to submit a Pull Request. For major c
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Google Gemini](https://deepmind.google/technologies/gemini/) for powerful language model capabilities
 - [ChromaDB](https://www.trychroma.com/) for efficient vector database operations
@@ -352,6 +352,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ by [Trideep Makal]
+Made by [Trideep]
 
 </div>
