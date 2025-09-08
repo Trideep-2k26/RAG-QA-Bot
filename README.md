@@ -16,7 +16,8 @@
 
 ---
 ## 🎥 Demo Video  
-[Watch the demo here](https://trideep1315.sirv.com/PDF%20Q%26A%20App%20-%20Google%20Chrome%202025-09-08%2011-07-18.mp4)
+[▶️ Watch the demo here](https://drive.google.com/file/d/1C1s9FLU5p4OtNIGYloStc6XFIQt2clHk/view?usp=drive_link)
+---
 
 
 ##  Features
